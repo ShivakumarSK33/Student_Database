@@ -1,0 +1,107 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light blue-gray background */
+    color: #333; /* Dark text color for contrast */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50; /* Dark blue-gray */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #2980b9; /* Bright blue for links */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #1f6391; /* Darker blue on hover */
+}
+
+/* Layout and Container */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #ecf0f1; /* Light gray background for list items */
+    padding: 10px; /* Reduced padding to make items closer */
+    margin: 5px 0; /* Reduced margin to make names closer together */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #d0dfe6; /* Slightly darker gray on hover */
+    color: white; /* Ensures text color stays visible on hover */
+}
+
+ul li a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: inherit; /* Ensure the text color is inherited and not overridden */
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #7f8c8d; /* Light gray for the footer */
+    font-size: 0.9rem;
+}
+
+/* Student Details Page */
+p strong {
+    color: #34495e; /* Dark blue-gray for labels */
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: yellow; /* Darker blue on hover */
+}
+
+/* For small screens */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    ul li {
+        padding: 8px; /* Reduced padding for small screens */
+        margin: 5px 0; /* Reduced margin for small screens */
+    }
+}

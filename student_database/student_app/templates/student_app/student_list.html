@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Database</title>
+    <link rel="stylesheet" href="{% static 'student_app/style.css' %}">
+</head>
+<body>
+    <h1>Student data base</h1>
+    <ul>
+        {% for student in students %}
+            <li><a href="{{ student.get_absolute_url }}">{{ student.name }}</a></li>
+        {% endfor %}
+    </ul>
+    <footer>© 2024 student record</footer>
+</body>
+</html>
